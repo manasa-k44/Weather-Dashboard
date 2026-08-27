@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Modern Weather Dashboard using HTML, CSS and JavaScript"
+    >
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="brand">
+                <div class="brand-icon">☁️</div>
+
+                <div>
+                    <h1>Weatherly</h1>
+                    <p>Smart Weather Dashboard</p>
+                </div>
+            </div>
+
+
+            <button
+                id="refreshBtn"
+                class="refresh-btn"
+                title="Refresh weather"
+            >
+                ↻
+            </button>
+
+        </header>
+
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">🔍</span>
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search city..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <button
+                id="locationBtn"
+                class="location-btn"
+            >
+                📍 Use My Location
+            </button>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+
+        <div
+            id="message"
+            class="message"
+        ></div>
+
+
+        <!-- LOADING -->
+
+        <div
+            id="loading"
+            class="loading"
+        >
+
+            <div class="spinner"></div>
+
+            <p>
+                Loading weather...
+            </p>
+
+        </div>
+
+
+        <!-- WEATHER CONTENT -->
+
+        <main
+            id="weatherContent"
+            class="weather-content"
+        >
+
+            <!-- CURRENT WEATHER -->
+
+            <section class="current-card">
+
+                <div class="current-top">
+
+                    <div>
+
+                        <p class="location-label">
+                            CURRENT WEATHER
+                        </p>
+
+                        <h2 id="cityName">
+                            Anantapur
+                        </h2>
+
+                        <p id="countryName">
+                            Search a city to begin
+                        </p>
+
+                    </div>
+
+
+                    <div class="date-time">
+
+                        <p id="currentDate">
+                            --
+                        </p>
+
+                        <strong
